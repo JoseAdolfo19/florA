@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#02030A">
+    <meta name="description" content="Un universo de flores amarillas creado para celebrar una amistad bonita.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Un universo para ti</title>
+</head>
+<body>
+    <main class="experience" id="experience">
+        <canvas id="universe" aria-label="Galaxia interactiva de flores amarillas"></canvas>
+        <div class="vignette" aria-hidden="true"></div>
+        <div class="grain" aria-hidden="true"></div>
+        <section class="intro-screen" id="introScreen" aria-label="Inicio de la experiencia">
+            <div class="intro-flower" aria-hidden="true"><span class="intro-petal intro-petal--1"></span><span class="intro-petal intro-petal--2"></span><span class="intro-petal intro-petal--3"></span><span class="intro-petal intro-petal--4"></span><span class="intro-petal intro-petal--5"></span><span class="intro-petal intro-petal--6"></span><span class="intro-center"></span></div>
+            <p class="intro-caption">Preparé este rinconcito de luz para celebrar nuestra amistad</p>
+            <button class="start-button" id="startButton" type="button"><span class="start-dot"></span>Entra a tu universo</button>
+        </section>
+        <div class="scene-copy" id="sceneCopy" aria-live="polite"><p class="scene-line scene-line--small" id="sceneSmall">Para ti, con cariño 🌻</p><h1 class="scene-line scene-line--middle" id="sceneMiddle">Un universo de amistad</h1><p class="scene-line scene-line--large" id="sceneLarge">que siempre tenga flores, risas<br>y un lugar bonito para compartir.</p></div>
+        <div class="hud" id="hud"><div class="hud-left"><a class="home-link" href="inicio.html" aria-label="Volver al inicio">⌂ <span>INICIO</span></a><p class="hud-label"><span class="hud-star">✦</span> CONSTELACIÓN DE AMISTAD</p></div><button class="sound-button" id="soundButton" type="button" aria-label="Activar sonido ambiente" title="Activar sonido ambiente">◌</button></div>
+        <button class="gift-button" id="giftButton" type="button">🌻 Tengo algo para ti</button><p class="tip" id="tip">mueve el cursor para explorar · toca una flor</p>
+        <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true"><section class="gift-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="close-button" id="closeModal" type="button" aria-label="Cerrar mensaje">×</button><div class="modal-sun" aria-hidden="true">✦</div><p class="modal-kicker">UN MENSAJE DE AMISTAD</p><h2 id="modalTitle">Un pequeño abrazo</h2><p>Las flores amarillas representan alegría, cariño y buenos deseos.</p><p>Gracias por compartir risas, momentos y tanta luz. Te regalo este pequeño universo para recordarte lo mucho que vales. 🌻✨</p><button class="return-button" id="returnButton" type="button">Seguir explorando</button></section></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

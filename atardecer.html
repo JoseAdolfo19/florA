@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#f09a55">
+    <meta name="description" content="Un atardecer entre girasoles para celebrar una amistad bonita.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="atardecer.css">
+    <title>Un atardecer para ti</title>
+</head>
+<body>
+    <main class="sunset-world" id="sunsetWorld">
+        <canvas id="sunsetCanvas" aria-label="Campo de girasoles interactivo al atardecer"></canvas>
+        <div class="sunset-overlay" aria-hidden="true"></div>
+
+        <header class="sunset-header">
+            <a class="home-link" href="inicio.html" aria-label="Volver al inicio">⌂ <span>INICIO</span></a>
+            <p><span>✦</span> UN ATARDECER PARA TI</p>
+            <button id="musicButton" class="music-button" type="button" aria-label="Activar sonido ambiente">◌</button>
+        </header>
+
+        <section class="sunset-intro" id="sunsetIntro">
+            <p class="eyebrow">DÍA DE LAS FLORES AMARILLAS</p>
+            <h1>Un campo lleno<br>de <em>luz</em> para ti</h1>
+            <p class="intro-text">Toca un girasol y descubre el mensaje que guarda para ti.</p>
+        </section>
+
+        <p class="sunset-tip" id="sunsetTip">toca un girasol para descubrir un mensaje</p>
+
+        <section class="flower-message" id="flowerMessage" aria-live="polite" aria-hidden="true">
+            <button class="message-close" id="messageClose" type="button" aria-label="Cerrar mensaje">×</button>
+            <span class="message-sun">✦</span>
+            <p class="message-label">UN MENSAJE ENTRE GIRASOLES</p>
+            <p class="message-text" id="messageText"></p>
+            <button class="message-next" id="messageNext" type="button">Tocar otro girasol <span>→</span></button>
+        </section>
+
+        <footer class="sunset-footer">hecho de sol, cariño y buenos deseos <span>🌻</span></footer>
+    </main>
+    <script src="atardecer.js"></script>
+</body>
+</html>
